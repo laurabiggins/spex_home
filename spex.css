@@ -21,13 +21,16 @@ body {
 	margin: 0 10px 0 0;
 }
 
+#selected_name {
+    display: inline;
+  }
+
 .button {
   font: bold 20px Arial;
   text-decoration: none;
   background-color: #ff6600e6;
-  color: #333333;
-  border: 1px solid #CCCCCC;
-  padding: 2px 6px 2px 6px;
+  color: black;
+  padding: 5px 10px;
   margin: 20px 10px;
+  border-radius: 8px;
 }
-

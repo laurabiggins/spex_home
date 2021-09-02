@@ -40,7 +40,8 @@ $.fn.dataTable.render.ellipsis = function ( cutoff ) {
 
 
 $('#summary_title').hide();
-$('#type_title').hide(); 
+$('#type_title').hide();
+$('#exploreDatasetButton').hide();  
 
 var shinyServer = 'http://127.0.0.1:3113/#'
 var table = $('#example').DataTable();
@@ -49,7 +50,8 @@ var selected_row = "";
 table.on( 'select', function ( e, dt, type, indexes ) {
     if ( type === 'row' ) {
         $('#summary_title').show();
-        $('#type_title').show();        
+        $('#type_title').show(); 
+        $('#exploreDatasetButton').show();      
         var data = table.rows( indexes ).data()[0];
         $('#selected_name').text(data.dataset_name);
         $('#selected_citation').text(data.citation);

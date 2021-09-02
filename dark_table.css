@@ -1,15 +1,16 @@
 :root {
 
-    --theadColor: #000;
-  
-    --theadTextColor: #fff;
-  
-    --darkColor:#000;
-  
-    --lightColor:#00aeef;
-  
-    --darkRowColor: #1b1d1b;
-  
+    /*-theadColor: #000;
+    --theadTextColor: #fff;  
+    --darkColor:#000; 
+    --lightColor:#00aeef; 
+    --darkRowColor: #1b1d1b; */
+
+    --theadColor: #ff6600e6;
+    /*--theadTextColor: #000;*/
+    --theadTextColor: #fff; 
+    --lightColor:#fff;
+    --darkRowColor: #464646;
   }
   
   body {
@@ -21,8 +22,10 @@
         table.dataTable {
   
         /* border:1px solid #000;*/
-		 border:3px solid #ff6600e6;
-         background-color: #000;
+		   /*border:3px solid #ff6600e6;*/
+       /* background-color: #000; */
+        background_color: #1d305f;
+        border-radius: 8px;
   
         }
   
@@ -31,7 +34,7 @@
         {
   
           border-color: #000 !important;
-  
+        
         }
   
         thead {
@@ -76,7 +79,8 @@
         }
         
 		table.dataTable.no-footer {
-			border:3px solid #ff6600e6;
+		 	border:2px solid #ff6600e6;
+       border-radius: 8px;
 		}
   
   
@@ -92,8 +96,8 @@
         table.dataTable.display tbody tr.even,
         table.dataTable.display tbody tr.even > .sorting_1 {
   
-          background-color: black;
-  
+         /* background-color: black;*/
+          background-color: #1d305f;
           color:var(--lightColor);
   
         }
@@ -101,6 +105,8 @@
 
         table.dataTable thead th {
   
+          font-size: 16px;
+
           position: relative;
   
           background-image: none !important;
