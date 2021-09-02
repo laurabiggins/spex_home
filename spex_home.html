@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.25/sl-1.3.3/datatables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="dark_table.css">
+	<link rel="stylesheet" type="text/css" href="spex.css">
+
+
+
+</head>	
+
+<body>
+	<img id="BI_logo1" src="images/BI_logo_grey.png" alt="BI logo">
+	<img id="spex_logo" src="images/spex_logo_rotated.png" alt="spex logo">
+    <h1>Spex</h1>
+	<p id="general_info">This is the home page of Spex, a tool that allows the simple exploration of a set of datasets. Here you can browse the information in the table below to see experimental datasets that are available to explore. 
+	To view more information about any of these, select a row from the table.</p>
+	<p>Datasets can also be chosen once you're in the main Spex application. 
+	<p>New datasets can be uploaded by clicking the button below. </p>
+	<a href="http://127.0.0.1:3113/" target="_blank" class="button" id="portal">Enter the portal</a>
+	<a href="https://www.bioinformatics.babraham.ac.uk/shiny/spex_upload/" target="_blank" class="button" id="upload_new">Upload new dataset</a>
+	<br>
+	<table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Dataset name</th>
+                <th>Citation</th>
+                <th>Summary info</th>
+                <th>Data type</th>
+            </tr>
+        </thead>
+ <!--       <tfoot>
+            <tr>
+                <th>Dataset name</th>
+                <th>Citation</th>
+                <th>Summary info</th>
+                <th>Data type</th>
+            </tr>
+        </tfoot> -->
+    </table>
+
+	<br>
+	<h3 id="selected_name"></h3>
+	<br>
+	<p id="selected_citation"></p>
+	<br>
+	<h3 id="summary_title">Summary</h3>
+	<p id="selected_summary_info"></p>
+	<br>
+	<h3 id="type_title">Data type</h3>
+	<p id="selected_data_type"></p>
+	<br>
+	<br>
+	<a href="http://127.0.0.1:3113/" target="_blank" class="button">Explore this dataset</a>
+	<br>
+	<br>
+	</p>
+
+	<br><br><br>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.25/sl-1.3.3/datatables.min.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.10.25/dataRender/ellipsis.js"></script>
+	<script src="spex_home.js"></script>
+	<style>
+		#example_filter {
+   			 color: #00aeef;
+		}
+		#example_info {
+   			 color: #00aeef;
+		}
+		.dataTables_filter input{
+			color: #00aeef;
+		}
+	</style>
+
+</body>
+</html>
