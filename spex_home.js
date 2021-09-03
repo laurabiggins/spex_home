@@ -57,7 +57,7 @@ table.on( 'select', function ( e, dt, type, indexes ) {
         $('#selected_citation').text(data.citation);
         $('#selected_summary_info').text(data.summary_info);
         $('#selected_data_type').text(data.data_type);
-		$('#portal')[0].href=shinyServer.concat(data.dataset_name)
+		$('#exploreDatasetButton')[0].href=shinyServer.concat(data.dataset_name)
     }
 } );
 
