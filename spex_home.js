@@ -43,7 +43,8 @@ $('#summary_title').hide();
 $('#type_title').hide();
 $('#exploreDatasetButton').hide();  
 
-var shinyServer = 'http://127.0.0.1:3113/#'
+//var shinyServer = 'http://127.0.0.1:3113/#'
+var shinyServer = 'https://www.bioinformatics.babraham.ac.uk/shiny/spex/spex/#'
 var table = $('#example').DataTable();
 var selected_row = "";
 
