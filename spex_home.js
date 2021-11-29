@@ -16,8 +16,8 @@ $.fn.dataTable.render.ellipsis = function ( cutoff ) {
 
  var table = $('#example').DataTable( {
     ajax: {
-        //url: 'https://raw.githubusercontent.com/laurabiggins/spex2/main/arrays.txt',
-		url: 'https://raw.githubusercontent.com/laurabiggins/spex2/main/updated_arrays.txt',
+        url: 'https://www.bioinformatics.babraham.ac.uk/spex/arrays/arrays.txt',
+		//url: 'https://raw.githubusercontent.com/laurabiggins/spex2/main/updated_arrays.txt',
         dataSrc: 'data'
     },
 	select: true,
